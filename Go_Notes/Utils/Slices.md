@@ -461,13 +461,17 @@ Better JSON output.
 
 Example problem:
 
+```go
 small := bigSlice[:10]
+```
 
 Even though slice is small, **entire large array stays in memory**.
 
 Fix:
 
+```go
 newSlice := append([]int(nil), small...)
+```
 
 ---
 
@@ -488,6 +492,7 @@ newSlice := append([]int(nil), small...)
 
 Processing API results:
 
+```go
 func filterEven(nums []int) []int {  
   
     result := make([]int, 0, len(nums))  
@@ -500,6 +505,7 @@ func filterEven(nums []int) []int {
   
     return result  
 }
+```
 
 Best practices used:
 
@@ -521,3 +527,69 @@ Slice = (Pointer + Length + Capacity)
 It is **a window over an array that can grow dynamically**.
 
 ---
+
+# `[]byte("a slice")`
+
+This is a **type conversion**.
+
+It converts the **string into a byte slice**.
+
+```go
+[]byte("a slice")
+```
+
+Result:
+
+```go
+[]byte{97, 32, 115, 108, 105, 99, 101}
+```
+
+---
+
+# Full Meaning
+
+```go
+bs := []byte("a slice")
+```
+
+Creates:
+
+```go
+bs = []byte{97, 32, 115, 108, 105, 99, 101}
+```
+
+Or conceptually:
+
+```txt
+bs → [a ' ' s l i c e]
+```
+
+---
+
+# Why This is Common in Go
+
+This pattern is used **everywhere in Go** because many systems work with **raw bytes instead of strings**.
+
+Examples:
+
+### File writing
+
+```go
+os.WriteFile("file.txt", []byte("hello"), 0644)
+```
+
+---
+
+### Network communication
+
+```go
+conn.Write([]byte("GET / HTTP/1.1"))
+```
+
+---
+
+### Hashing / crypto
+
+```go
+hash.Write([]byte("password"))
+```

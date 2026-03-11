@@ -111,6 +111,9 @@ for _, value := range arr {
 }
 ```
 
+>NOTE
+>The underscore lets you "use" a variable but discard its value.
+      `_, _, _, _, _, _, _, _, _, _ = str, s2, g, f, u, pi, n, a5, s4, b`
 ---
 
 ## **6. Arrays are Value Types**

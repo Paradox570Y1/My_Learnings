@@ -2,5 +2,7 @@
 [[Build Tag]]
 [[Packages]]
 [[Initializing Go module]]
+[[Operators]]
 [[Arrays]]
 [[Slices]]
+[[Map]]
