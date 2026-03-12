@@ -2,9 +2,9 @@ In a Go project, database **migrations** are usually stored as **versioned `.sql
 
 - [[golang-migrate]] (`migrate`)
     
-- Goose
+- [[Goose]]
     
-- Atlas
+- [[Atlas]]
     
 
 The most common in Go projects is **golang-migrate**. It expects **two files per migration**:  
