@@ -25,6 +25,9 @@ my-go-service/
 │   ├── models/                  # Database models
 │   │   └── user.go
 │   │
+│   ├── domain/                  # Core business entities & domain logic
+│   │   └── user.go
+│   │
 │   ├── dto/                     # Request/Response objects
 │   │   └── user_dto.go
 │   │

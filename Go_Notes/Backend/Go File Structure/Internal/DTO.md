@@ -1,7 +1,7 @@
 The **DTO (Data Transfer Object) pattern** is widely used in Go `internal/handlers` to **decouple HTTP request/response payloads from internal domain models**. This keeps your API layer clean, secure, and maintainable. Here’s a crisp yet detailed explanation.
 
 >NOTE
->[[Domain models]]
+>[[Domain]]
 # 1. What a DTO Is
 
 A **DTO** is a struct that defines **only the data your handler needs to receive or return**, separate from internal domain or database models.

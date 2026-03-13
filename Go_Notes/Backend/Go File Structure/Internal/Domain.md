@@ -1,4 +1,3 @@
-## **Domain Models**
 
 A **domain model** represents the **core business logic** of your application. It defines the entities and behaviors that are relevant to your problem space, independent of how the data comes in or goes out.
 

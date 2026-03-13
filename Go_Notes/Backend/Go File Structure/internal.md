@@ -57,5 +57,7 @@ Database
 
 - [[config]]
 - [[handlers]]
+- [[Domain]]
 - [[DTO]]
+- [[repository]]
 - [[service]]
