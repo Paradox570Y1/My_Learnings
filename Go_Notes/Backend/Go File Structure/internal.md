@@ -1,3 +1,4 @@
+
 In Go projects, the internal/ folder is a special directory designed for **private application code**.
 This code is meant to be used **only within the project** (and not be exposed to other Go modules or external dependencies). It provides a way to **encapsulate** certain parts of the codebase that you don't want to be directly accessed by other projects or packages.
 
@@ -38,6 +39,23 @@ The `internal/` folder contains the **core logic** of your application, such as:
 By clearly separating the public and private parts of the code, you make it easier to maintain and refactor the project. You can change internal code without worrying about breaking external consumers.
 
 
+# Typical flow in a Go backend:
+
+```cmd
+Client Request
+      ↓
+Handler (internal/handlers)
+      ↓
+Service (internal/service)
+      ↓
+Repository (internal/repository)
+      ↓
+Database
+```
+
 # Sub Layers inside Internal
 
 - [[config]]
+- [[handlers]]
+- [[DTO]]
+- [[service]]
