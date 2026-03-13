@@ -4,20 +4,34 @@ A **package** is simply a **collection of Go files that belong together**.
 
 Think of a package as a **folder of related code**.
 
-Example project:
+In Go, a **package** is a collection of Go source files in the same directory. When we say the files in a package "share the same name," we mean that the directory containing the files has the same name as the package.
 
-```bash
-calculator/  
- ├ main.go  
- ├ math.go  
- └ utils.go
+Example: Directory Structure
+```cmd
+/mathutils
+    add.go
+    subtract.go
 ```
 
-If all files start with:
+`add.go` (inside `mathutils` package)
+```go
+package mathutils
 
-package calculator
+import "fmt"
 
-then they belong to the **same package**.
+func Add(a, b int) int {
+    return a + b
+}
+```
+
+Here’s the breakdown:
+
+- The directory `mathutils` is the **package** name.
+    
+- All Go files (`add.go`, `subtract.go`) in the `mathutils` directory belong to the `mathutils` package because they start with `package mathutils`.
+    
+- The package name is **mathutils**, which matches the directory name where the files are stored.
+
 
 ### Why packages exist
 

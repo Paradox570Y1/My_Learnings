@@ -64,3 +64,4 @@ my-go-service/
 # Folder Responsibilities (Production Explanation)
 
 - [[cmd]]
+- [[internal]]
