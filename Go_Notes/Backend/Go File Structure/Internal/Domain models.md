@@ -21,3 +21,5 @@ Key points about domain models:
 - They may have **methods** that operate on the data.
     
 - They are **decoupled from the transport layer** (HTTP, gRPC, etc.).
+
+In Go, organizing code in a structured and maintainable way is crucial, especially as your project grows. One of the most important concepts in organizing Go projects—particularly when following architectural patterns such as **Domain-Driven Design (DDD)**—is the use of a **`domain`** directory inside an **`internal`** package.
