@@ -9,3 +9,6 @@
 [[migrations]]
 [[go modules]]
 [[File Structure]]
+[[Interfaces]]
+[[Async messaging]]
+[[JSON marshaling and unmarshaling]]

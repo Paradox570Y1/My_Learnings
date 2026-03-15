@@ -35,7 +35,7 @@ my-go-service/
 │   │   └── routes.go
 │   │
 │   ├── database/                # DB connection setup
-│   │   └── postgres.go
+│   │   └── mysql.go
 │   │
 │   ├── utils/                   # Helper utilities
 │   │   └── response.go
@@ -65,4 +65,4 @@ my-go-service/
 
 - [[cmd]]
 - [[internal]]
-- 
+- [[pkg]]
