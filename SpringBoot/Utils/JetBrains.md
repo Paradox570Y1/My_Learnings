@@ -1,0 +1,1 @@
+A **JetBrains project** refers to a workspace or set of files created and managed within one of the **JetBrains IDEs** (Integrated Development Environments), like **IntelliJ IDEA**, **PyCharm**, **WebStorm**, **CLion**, or others. It’s essentially the way JetBrains IDEs organize your code, settings, and related resources.
